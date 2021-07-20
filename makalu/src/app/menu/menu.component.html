@@ -1,0 +1,32 @@
+<section id="menu">
+            <div class="upper">
+                <div class="title">
+                    <div class="title-info">
+                        <h1>Nuestro Menú</h1>
+                        <h2>Creado Especialmente por nuestros Chefs</h2>
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="category" 
+                    *ngFor="let category of categories"
+                    (click)="select_category(category.id)"
+                    >
+                    {{category.name}}
+                    </button>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div *ngFor="let dish of dishes">
+                <div class="dish" *ngIf="selected_category == dish.category">
+                    <img src="{{dish.img}}">
+                    <div class="dish-info">
+                        <h1>{{dish.name}}</h1>
+                        <p>{{dish.description}}</p>
+                    </div>
+                    <button>Ver Más</button>
+                </div>
+                </div>
+                
+            </div>
+        </section>

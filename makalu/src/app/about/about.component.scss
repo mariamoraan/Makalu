@@ -1,0 +1,81 @@
+#about{
+    height: auto;
+    background: white;
+    width: 100vw;
+    position: relative;
+}
+
+#about .about-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+#about .about-post .about-post-img{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .about-post .about-post-img img{
+    width: 40vw;
+    height: auto;
+    border-radius: 5px;
+}
+
+#about .about-post .about-post-info{
+    width: 40vw;
+    height: auto;
+    padding: 0 20px;
+    text-align: center;
+}
+#about .about-post .about-post-info h1{
+    font-size: 30px;
+}
+#about .about-post .about-post-info h2{
+    margin: 10px 0;
+    font-size: 12px;
+}
+#about .about-post .about-post-info p{
+    font-size: 14px;
+    /**text-align: justify;**/
+}
+#about .about-post .about-post-info button{
+    margin-top: 20px;
+    background: #F5CC86;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+#about .about-post .about-post-info button:hover{
+    cursor: pointer;
+}
+
+@media  screen and (max-width: 800px) {
+    #about .about-post {
+        display: block;
+    }
+    #about .about-post .about-post-info{
+        width: 100vw;
+        padding: 0;
+    }
+    #about .about-post .about-post-info p, #about .about-post .about-post-info h2, #about .about-post .about-post-info h1{
+        padding: 0 20px;
+    }
+    #about .about-post .about-post-img{
+        width: 100vw;
+        margin-bottom: 20px;
+    }
+    
+    #about .about-post .about-post-img img{
+        width: 80vw;
+    }
+}

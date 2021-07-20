@@ -1,0 +1,169 @@
+#blog{
+    margin-bottom: 5vh;
+}
+#blog .blog-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog .last-entries{
+    width: 70vw;
+    margin: 5vh 0;
+}
+#blog .blog-title{
+    height: 20vh;
+    background: url('../../assets/blog-bg.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+    color: white;
+    position: relative;
+}
+
+#blog .blog-title .blog-title-info{
+    height: 100%;
+    width:100%;
+    background: rgba(0, 0, 0, 0.712);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog .blog-title h1{
+    font-size: 40px;
+}
+#blog .last-entries .entry{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+    margin: 5vh 0;
+}
+#blog .last-entries .entry .entry-img{
+    width: 30%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#blog .last-entries .entry .entry-img img{
+    width: 20vw;
+    height: auto;
+    border-radius: 5px;
+}
+#blog .last-entries .entry .entry-info{
+    width: 30vw;
+}
+#blog .last-entries .entry .entry-info h1{
+    margin-bottom: 20px;
+}
+#blog .last-entries .entry .entry-info p{
+    text-align: justify;
+}
+#blog .last-entries .entry .entry-info p::after{
+    content: "...";
+}
+#blog .last-entries .entry .entry-info button{
+    background: #F5CC86;
+    padding: 5px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+}
+#blog .last-entries .entry .entry-info button:hover{
+    cursor: pointer;
+}
+
+#blog .blog-ad{
+    color: white;
+    margin: 20px 20px;
+    height: 70vh;
+    width: 50vw;
+
+    text-align: center;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    background: url('../../assets/olive-oil.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog .blog-ad .action-call{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.705);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog .blog-ad .action-call h1{
+    font-size: 40;
+    margin-bottom: 10px;
+    
+}
+#blog .blog-ad .action-call h2{
+    font-size: 8;
+    margin-bottom: 40px;
+}
+#blog .blog-ad .action-call button{
+    
+    background: #F5CC86;
+    padding: 10px 30px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #blog .blog-content{
+        flex-direction: column;
+       }
+       #blog .blog-ad{
+           height: auto;
+           width: 90vw;
+       }
+       #blog .blog-ad .action-call{
+           padding: 20px;
+       }
+       #blog .last-entries{
+           width: 100vw;
+           margin: 5vh 0;
+           justify-content: center;
+       }
+       #blog .last-entries .entry{
+           width: auto;
+           height: auto;
+           flex-direction: column;
+           text-align: center;
+           justify-content: center;
+       }
+       #blog .last-entries .entry .entry-img{
+           width: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       #blog .last-entries .entry .entry-img img{
+           width: 80vw;
+       }
+       #blog .last-entries .entry .entry-info{
+           width: auto;
+           padding: 20px;
+       }
+}
+

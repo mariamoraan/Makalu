@@ -1,0 +1,33 @@
+#footer{
+    background: black;
+    position: relative;
+}
+
+#footer .social-info{
+    
+}
+#footer .social-info ul{
+    width: 100vw;
+    height: calc(0.3*50vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+#footer .social-info ul li{
+    margin: 0 20px;
+}
+#footer .social-info ul img{
+    height: 40px;
+    width: 40px;
+    transition: transform 500ms linear;
+}
+
+#footer .social-info ul li img:hover{
+    /* animation-name: turn;
+    animation-duration: 1s; */
+    cursor: pointer;
+    transform: rotate(360deg);
+    
+}

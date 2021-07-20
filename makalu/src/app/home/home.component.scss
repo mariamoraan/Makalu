@@ -1,0 +1,160 @@
+#home{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.poster{
+    background: url('../../assets/bg.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+.poster .poster-info{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.712);
+}
+.poster nav{
+    text-align: center;
+    padding: 20px;
+}
+.poster nav a{
+    color: white;
+    margin: 0 20px;
+}
+.poster nav a:hover{
+    border-bottom: 0.5px solid white;
+}
+.info{
+    padding: 20px 70px;
+    position: absolute;
+    width: 50vw;
+    height: 30vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;   
+}
+.info h1{
+    font-size: 40px;
+    margin: 20px;
+    color: white;
+}
+.info h2{
+    font-size: 20px;
+    font-style: italic;
+    margin: 10px;
+    color: #F5CC86;
+}
+.info p{
+    color: white;
+}
+.reservation{
+    text-align: center;
+    height: 30vh;
+    width: 80vw;
+    background: #1C1C1C;
+    position: absolute;
+    top: 65vh;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.flexb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.reservation .input{
+    position: relative;
+}
+.reservation .input label{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+form h1{
+    color: white;
+    margin: 10px 0;
+}
+input{
+    padding: 8px 20px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+#submit-btn{
+    border: none;
+    outline: none;
+    background: #F5CC86;
+    color: white;
+    padding: 8px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    #home{
+        height: auto;
+    }
+    
+    .poster{
+        height: auto;
+        position: relative;
+    }
+    .info{
+        position: relative;
+        height: auto;
+        max-height: 100vh;
+        width: auto;
+        top: 10px;
+    }
+    .info h1{
+        margin: 0;
+        padding: 0;
+    }
+    .info h2, .info p{
+        margin: 5vh 2vw;
+        padding: 0;
+    }
+    .reservation{
+        margin-top: 0;
+        padding: 0;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        
+    }
+    .reservation form .flexb{
+        display: block;
+    }
+    .upper .title{
+        width: auto;
+        height: auto;
+    }
+    
+    }
+    
+    
+    
+
+
+

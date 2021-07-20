@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/makalu",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
